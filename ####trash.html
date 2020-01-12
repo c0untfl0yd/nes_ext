@@ -1,0 +1,137 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+		display: flex;
+		flex-direction: row;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+	  .row{
+	  display: flex;
+	  flex-direction: row;
+	  border: 1px solid;
+	  margin: 2px;
+	  }
+	  .column{
+	  display: flex;
+	  flex-direction: column;
+	  border: 1px solid;
+	  margin: 2px;
+	  }
+	  
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="popup2.js"></script>
+  </head>
+  <body>
+    <div id="status"></div>
+    <img id="image-result" hidden>
+
+
+<div class="row">
+	<div class="column">	
+		
+		<button id="en_LU" style="color: blue;">en_LU</button>
+		<button id="en_AT">en_AT</button>
+		<button id="en_CZ">en_CZ</button>
+		<button id="en_FI">en_FI</button>
+		<button id="en_HU">en_HU</button>
+		<button id="en_NL">en_NL</button>
+		<button id="en_SI">en_SI</button>
+		
+		<button id="en_BE">en_BE</button>
+		<button id="en_DK">en_DK</button>
+		<button id="en_GB">en_GB</button>
+		<button id="en_IE">en_IE</button>
+		<button id="en_PT">en_PT</button>
+		<button id="en_SE">en_SE</button>
+	</div>
+		
+	<div class="column">
+		<button id="en_AU">en_AU</button>
+		<button id="en_CA">en_CA</button>
+		<button id="en_IN">en_IN</button>
+		<button id="en_IL">en_IL</button>
+		<button id="en_ID">en_ID</button>
+		<button id="en_MY">en_MY</button>
+		<button id="en_NZ">en_NZ</button>
+		<button id="en_NO">en_NO</button>
+		<button id="en_PH">en_PH</button>
+		<button id="en_SG">en_SG</button>
+		<button id="en_CH">en_CH</button>
+		
+		<button id="en_HK">en_HK</button>
+		<button id="en_XF">en_XF</button>
+		<button id="en_XM">en_XM</button>
+		<button id="zh_CN">zh_CN</button>
+	</div>
+</div>
+
+<div class="row">
+	<div class="column">
+		<button id="nl_BE" style="color: blue;">nl_BE</button>
+		<button id="nl_NL">nl_NL</button>
+		
+		<button id="fr_LU" style="color: blue;">fr_LU</button>
+		<button id="fr_BE">fr_BE</button>
+		<button id="fr_FR">fr_FR</button>
+		<button id="fr_CA">fr_CA</button>
+		<button id="fr_CH">fr_CH</button>
+		
+		<button id="de_LU" style="color: blue;">de_LU</button>
+		<button id="de_AT">de_AT</button>
+		<button id="de_BE">de_BE</button>
+		<button id="de_DE">de_DE</button>
+		<button id="de_CH">de_CH</button>
+		
+		<button id="it_IT" style="color: blue;">it_IT</button>
+		<button id="it_CH">it_CH</button>
+	</div>
+
+	<div class="column">
+		<button id="es_MX" style="color: blue;">es_MX</button>
+		<button id="es_CL">es_CL</button>
+		<button id="es_XL">es_XL</button>
+		
+		
+		<button id="es_UY" style="color: blue;">es_UY</button>
+		<button id="es_AR">es_AR</button>
+
+		<button id="en_US" style="color: red;">en_US</button>
+		<button id="el_GR" style="color: red;">el_GR</button>
+		<button id="pl_PL" style="color: red;">pl_PL</button>	
+		<button id="ca_ES" style="color: red;">ca_ES</button>
+		<button id="es_ES" style="color: red;">es_ES</button>
+		<button id="tr_TR" style="color: red;">tr_TR</button>
+		
+		<button id="zh_TW" style="color: red;">zh_TW</button>
+		<button id="ja_JP" style="color: red;">ja_JP</button>
+		<button id="ru_RU" style="color: red;">ru_RU</button>
+		<button id="th_TH" style="color: red;">th_TH</button>
+	</div>
+</div>
+	
+  </body>
+</html>
+
